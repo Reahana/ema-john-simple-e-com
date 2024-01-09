@@ -41,3 +41,8 @@ letter-spacing: 0.032px;
     position: absolute;
     bottom:0;
 }
+
+.btn-cart:hover{
+    background-color:  #FF9900;
+    color : #fff
+}

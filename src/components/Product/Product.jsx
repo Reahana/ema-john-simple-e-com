@@ -2,8 +2,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './Product.css'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+//  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//  import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Product = (props) => {
 const{img, name, seller, ratings ,price}= props.product;
@@ -19,7 +19,7 @@ return (
             </div>
            <button onClick={()=> handleAddToCart(props.product)} className='btn-cart'>
             Add to cart
-            {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
+            {/* <FontAwesomeIcon icon={faShoppingCart} />  */}
             </button>
         </div>
     );

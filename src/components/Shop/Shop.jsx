@@ -33,6 +33,9 @@ const handleAddToCart = (product) =>{
                 <h3>Order Summary</h3>
                 <p>Selected item: {cart.length}</p>
                 <p>Total Price: $</p>
+                <p>Shipping: $</p>
+                <p>Tax: $</p>
+                <h4>Grand Total: $</h4>
             </div>
         </div>
     );

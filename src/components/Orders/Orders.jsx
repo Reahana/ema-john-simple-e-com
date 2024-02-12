@@ -7,7 +7,7 @@ const Orders = () => {
     return (
         <div className='shop-container'>
             <div className='products-container'>
-            <h2>orders : {products.length}</h2>
+            <h2>orders : </h2>
             </div>
             <div className='cart-container'>
                 <Cart cart={[]}></Cart>

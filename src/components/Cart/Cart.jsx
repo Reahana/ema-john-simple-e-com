@@ -2,9 +2,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './Cart.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
-const Cart = (props) => {
-    const {cart} = props;
+
+const Cart = ( {cart, handleClearCart}) => {
+   
 
     let totalPrice = 0;
     let totalShipping = 0;
@@ -27,6 +30,11 @@ const Cart = (props) => {
                 <p>Shipping: $ {totalShipping}</p>
                 <p>Tax: $ {tax.toFixed(2)}</p>
                 <h4>Grand Total: $ {grandTotal.toFixed(2)}</h4>
+                <button onClick={handleClearCart} className='btn-clear-cart'> 
+                    <span>Clear Cart</span>
+                <FontAwesomeIcon  icon={faTrashAlt} /> 
+        
+                </button>
         </div>
     );
 };
